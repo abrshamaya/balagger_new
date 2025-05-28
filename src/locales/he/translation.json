@@ -1,0 +1,15 @@
+{
+  "common": {
+    "welcome": "ברוכים הבאים לבלגר",
+    "language": "שפה",
+    "english": "אנגלית",
+    "hebrew": "עברית",
+    "amharic": "אמהרית",
+    "french": "צרפתית"
+  },
+  "navigation": {
+    "home": "בית",
+    "about": "אודות",
+    "contact": "צור קשר"
+  }
+} 
