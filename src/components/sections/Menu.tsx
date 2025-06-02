@@ -74,15 +74,15 @@ export const Menu = () => {
       {/* Section divider */}
       <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-green-200/60 to-transparent pointer-events-none" />
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-6 md:mb-6">
           <a
             href="#" // Replace with your online ordering link
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block"
+            className="w-full md:w-auto flex justify-center"
           >
             <Button
-              className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 animate-glow"
+              className="w-full md:w-auto bg-yellow-500 hover:bg-yellow-600 text-white font-bold shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 animate-glow"
               size="lg"
               style={{ boxShadow: '0 0 32px 0 #facc15aa, 0 0 8px 0 #facc15cc' }}
             >
