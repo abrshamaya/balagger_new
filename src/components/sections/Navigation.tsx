@@ -65,8 +65,6 @@ export const Navigation = () => {
                 <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-green-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
               </Link>
             ))}
-            {/* Language Dropdown */}
-            
             {/* Social Icons */}
             {socialLinks.map(({ icon: Icon, label, href }) => (
               <Tooltip key={label}>
@@ -138,20 +136,6 @@ export const Navigation = () => {
                   <Icon className="w-6 h-6" />
                 </a>
               ))}
-            </div>
-            <div className="mt-4">
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="outline" className="w-full flex items-center gap-2 bg-white/50 hover:bg-white/80 transition-colors">
-                    <Globe className="w-5 h-5" /> Language
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                  <DropdownMenuItem>English</DropdownMenuItem>
-                  <DropdownMenuItem>Amharic</DropdownMenuItem>
-                  <DropdownMenuItem>French</DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
             </div>
           </div>
         </div>
