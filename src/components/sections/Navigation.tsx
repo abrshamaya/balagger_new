@@ -8,6 +8,9 @@ import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from "@/comp
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Menu", href: "/menu" },
+  { name: "Catering", href: "/catering" },
+  { name: "Events", href: "/events" },
+  { name: "History", href: "/history" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
@@ -35,13 +38,19 @@ export const Navigation = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-green-50 to-white shadow-lg border-b border-green-100 dark:border-green-900 transition-all">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <img
-              src="/lovable-uploads/7ac6a401-9189-4869-8885-7636e91a52c0.png"
-              alt="Balagger Logo"
-              className="w-12 h-12 rounded-full border-2 border-green-200 shadow-md transition-transform duration-300 group-hover:scale-110"
-            />
-            <span className="text-2xl font-bold text-green-900 tracking-widest drop-shadow-sm group-hover:text-green-600 transition-colors">BALAGGER</span>
+          <Link to="/" className="flex items-center group">
+            <div className="w-20 h-20 bg-white rounded-full border-2 border-green-200 shadow-md flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105 relative">
+              <img
+                src="/assets/logo.png"
+                alt="Restaurant Logo"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <span className="balagger-text ml-4">
+              BALA
+              <span className="balagger-green">GG</span>
+              ER
+            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -89,11 +98,13 @@ export const Navigation = () => {
           <div className="flex flex-col h-full p-6 gap-8">
             <div className="flex items-center justify-between">
               <Link to="/" onClick={() => setMobileOpen(false)}>
-                <img
-                  src="/lovable-uploads/7ac6a401-9189-4869-8885-7636e91a52c0.png"
-                  alt="Balagger Logo"
-                  className="w-10 h-10 rounded-full border-2 border-green-200 shadow-md"
-                />
+                <div className="w-20 h-20 bg-white rounded-full border-2 border-green-200 shadow-md flex items-center justify-center overflow-hidden relative">
+                  <img
+                    src="/assets/logo.png"
+                    alt="Restaurant Logo"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
               </Link>
               <Button variant="ghost" size="icon" onClick={() => setMobileOpen(false)}>
                 <X className="w-6 h-6" />

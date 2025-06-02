@@ -37,9 +37,6 @@ export const Hero = ({ onMenuClick }: HeroProps) => {
 
       </div>
       <div className="relative text-center text-white space-y-6 animate-fade-in px-4">
-        <h1 className="text-5xl md:text-7xl font-light tracking-tight animate-slide-down">
-          <span className="inline-block animate-fade-in delay-100">BALAGGER</span>
-        </h1>
         <p className="text-xl md:text-2xl font-light tracking-wide animate-slide-up delay-300">
           A culinary journey through modern gastronomy
         </p>
@@ -51,6 +48,20 @@ export const Hero = ({ onMenuClick }: HeroProps) => {
           <span className="relative z-10">Menu</span>
           <span className="absolute inset-0 rounded-full bg-green-400 opacity-30 blur-xl animate-pulse-glow" />
         </Button>
+        <a
+          href="#" // Replace with your online ordering link
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-4"
+        >
+          <Button
+            className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 animate-glow"
+            size="lg"
+            style={{ boxShadow: '0 0 32px 0 #facc15aa, 0 0 8px 0 #facc15cc' }}
+          >
+            Order Online
+          </Button>
+        </a>
       </div>
       {/* Scroll Down Indicator */}
       <div 
@@ -62,7 +73,7 @@ export const Hero = ({ onMenuClick }: HeroProps) => {
         </div>
       </div>
       {/* Animations */}
-      <style jsx>{`
+      <style>{`
         .animate-glow {
           box-shadow: 0 0 32px 0 #22c55e66, 0 0 8px 0 #22c55e99;
           animation: glow 2s infinite alternate;

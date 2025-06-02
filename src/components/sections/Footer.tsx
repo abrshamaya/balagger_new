@@ -19,7 +19,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row md:justify-center md:items-center gap-6 mb-6 text-green-100 text-sm">
           <a href="tel:+17033797799" className="flex items-center gap-2 hover:text-green-300 transition-colors"><Phone className="w-4 h-4" /> (703) 379-7799</a>
           <a href="https://www.google.com/maps?q=38.841233,-77.118780&z=17&output=embed" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-green-300 transition-colors"><MapPin className="w-4 h-4" /> 3813 S George Mason Dr Suite - E & F, Falls Church, VA 22041</a>
-          <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> Mon-Sat: 11am-11pm, Sun: 12pm-9pm</span>
+          <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> Mon-Sat: 11am-2pm, Sun: 12pm-2pm</span>
         </div>
         <div className="flex justify-center space-x-6 mb-6">
           <a href="https://www.instagram.com/balaggerva/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors" aria-label="Instagram">

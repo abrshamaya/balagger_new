@@ -44,11 +44,11 @@ export const Info = () => {
           </div>
           <h3 className="text-xl font-medium text-green-900">Hours</h3>
           <p className="text-green-600">
-            Monday - Friday: 11am - 10pm
+            Monday - Friday: 11am - 2pm
             <br />
-            Saturday: 11am - 11pm
+            Saturday: 11am - 2pm
             <br />
-            Sunday: 12pm - 9pm
+            Sunday: 12pm - 2pm
           </p>
         </div>
         <div className="text-center space-y-4">

@@ -33,7 +33,7 @@ const images: Record<string, { name: string; src: string; badge?: string; descri
   "House Special": [
     { name: "Special Combo", src: "/assets/food_images/House Special/Special Combo.jpg", description: "A special combination of house favorites.", price: "$27.99" },
     { name: "Kornis", src: "/assets/food_images/House Special/Special Combo.jpg", description: "Ye tsome firfir topped with thick stripe of ribeye cooked to perfection.", price: "$29.99" },
-    { name: "Ya'ager Combo", src: "/assets/food_images/House Special/Special Combo.jpg", description: "Combination of Kitfo, dulet, tibs, scrambled egg, cabbage, collared green and homemade cheese, served with Injera and bread", price: "$53.99" },
+    { name: "Ya'ager Combo", src: "/assets/food_images/House Special/kornis.JPG", description: "Combination of Kitfo, dulet, tibs, scrambled egg, cabbage, collared green and homemade cheese, served with Injera and bread", price: "$53.99" },
   ],
   Fish: [
     { name: "Balagger Salad", src: "/assets/food_images/FISH/Balagger Salad.jpg", description: "Fresh salad with grilled fish fillet.", price: "$9.99" },
@@ -74,6 +74,22 @@ export const Menu = () => {
       {/* Section divider */}
       <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-green-200/60 to-transparent pointer-events-none" />
       <div className="max-w-6xl mx-auto px-4">
+        <div className="flex justify-center mb-6">
+          <a
+            href="#" // Replace with your online ordering link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Button
+              className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 animate-glow"
+              size="lg"
+              style={{ boxShadow: '0 0 32px 0 #facc15aa, 0 0 8px 0 #facc15cc' }}
+            >
+              Order Online
+            </Button>
+          </a>
+        </div>
         <h2 className="text-2xl md:text-4xl font-extrabold text-center mb-6 md:mb-10 text-green-900 tracking-tight animate-fade-in">Menu</h2>
         {/* Tabs for categories */}
         <Tabs defaultValue={categories[0]} className="w-full">

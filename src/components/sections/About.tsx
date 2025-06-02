@@ -14,6 +14,11 @@ export const About = () => {
       </div>
       <div className="space-y-8 text-center animate-fade-in">
         <h2 className="text-3xl md:text-4xl font-extrabold text-green-900 tracking-tight animate-slide-down">Story</h2>
+        <img
+          src="/assets/story.JPG"
+          alt="Balagger Story"
+          className="mx-auto my-6 rounded-2xl shadow-2xl border-4 border-green-200 w-full max-w-md h-64 object-cover animate-fade-in"
+        />
         <div className="space-y-6 text-lg text-green-700 max-w-3xl mx-auto leading-relaxed animate-slide-up">
           <p>
             At Balagger (pronounced Ballə'gar), situated in the bustling enclave of Falls Church within the Washington, DC Metropolitan sphere, we have proudly welcomed discerning guests since 2013. Our unwavering commitment is to bring you an authentic Ethiopian dining experience, meticulously crafted to reflect the rich tapestry of our cultural heritage. Nestled inside Build America Plaza—colloquially known as 'Skyline'—we enjoy seamless accessibility from Interstate 395 and lie a mere 10 miles from Ronald Reagan Washington National Airport and Pentagon City.
@@ -33,7 +38,7 @@ export const About = () => {
             <DialogTitle>Meet the Owner</DialogTitle>
           </DialogHeader>
           <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=facearea&w=400&h=400" alt="Chef" className="w-40 h-40 object-cover rounded-full mx-auto my-4 shadow-lg border-4 border-green-200" />
-          <p className="text-green-900 text-center mb-2">My name is Eshetu, and Balagger is more than just a restaurant—it’s the heart of a dream I carried from Ethiopia to USA. I opened Balagger to share the rich culture, warmth, and flavors of home with our community. Every dish, every detail is a reflection of my passion for hospitality and my deep love for our heritage. This isn’t just a business—it’s a place where stories, laughter, and tradition come together. Welcome to Balagger, where you're not just a guest—you're family. </p>
+          <p className="text-green-900 text-center mb-2">My name is Eshetu, and Balagger is more than just a restaurant—it's the heart of a dream I carried from Ethiopia to USA. I opened Balagger to share the rich culture, warmth, and flavors of home with our community. Every dish, every detail is a reflection of my passion for hospitality and my deep love for our heritage. This isn't just a business—it's a place where stories, laughter, and tradition come together. Welcome to Balagger, where you're not just a guest—you're family. </p>
         </DialogContent>
       </Dialog>
       {/* Animations */}
