@@ -52,7 +52,7 @@ export const Hero = ({ onMenuClick }: HeroProps) => {
           href="#" // Replace with your online ordering link
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-4"
+          className="block mx-auto mt-4 w-max"
         >
           <Button
             className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold shadow-lg px-8 py-3 text-lg rounded-full transition-all duration-300 animate-glow"
