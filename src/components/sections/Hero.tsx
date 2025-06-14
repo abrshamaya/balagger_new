@@ -40,14 +40,7 @@ export const Hero = ({ onMenuClick }: HeroProps) => {
         <p className="text-xl md:text-2xl font-light tracking-wide animate-slide-up delay-300">
           A culinary journey through modern gastronomy
         </p>
-        <Button
-          className="mt-8 bg-green-600 text-white hover:bg-green-700 transition-all shadow-lg relative overflow-hidden animate-glow"
-          size="lg"
-          onClick={onMenuClick}
-        >
-          <span className="relative z-10">Menu</span>
-          <span className="absolute inset-0 rounded-full bg-green-400 opacity-30 blur-xl animate-pulse-glow" />
-        </Button>
+
         <a
           href="#" // Replace with your online ordering link
           target="_blank"
