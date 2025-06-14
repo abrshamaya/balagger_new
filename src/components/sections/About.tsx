@@ -32,7 +32,7 @@ export const About = () => {
         </Button>
       </div>
       {/* Chef Modal */}
-      <Dialog open={open} onOpenChange={setOpen}>
+      {/* <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-md">
           <DialogHeader>
             <DialogTitle>Meet the Owner</DialogTitle>
@@ -40,7 +40,7 @@ export const About = () => {
           <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=facearea&w=400&h=400" alt="Chef" className="w-40 h-40 object-cover rounded-full mx-auto my-4 shadow-lg border-4 border-green-200" />
           <p className="text-green-900 text-center mb-2">My name is Eshetu, and Balagger is more than just a restaurant—it's the heart of a dream I carried from Ethiopia to USA. I opened Balagger to share the rich culture, warmth, and flavors of home with our community. Every dish, every detail is a reflection of my passion for hospitality and my deep love for our heritage. This isn't just a business—it's a place where stories, laughter, and tradition come together. Welcome to Balagger, where you're not just a guest—you're family. </p>
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
       {/* Animations */}
       <style>{`
         .animate-slide-down {
