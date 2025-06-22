@@ -9,7 +9,7 @@ import { Navigation } from "@/components/sections/Navigation";
 import { Footer } from "@/components/sections/Footer";
 
 export const Contact = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", message: "", phone: "" });
   const [loading, setLoading] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
 
@@ -29,11 +29,12 @@ export const Contact = () => {
           name: form.name,
           email: form.email,
           message: form.message,
+          phone: form.phone,
         },
         "cImHHNy21N6I0XM9V" // <-- Your EmailJS public key
       );
       setFeedback("Message sent successfully!");
-      setForm({ name: "", email: "", message: "" });
+      setForm({ name: "", email: "", message: "", phone: "" });
     } catch (error) {
       setFeedback("Failed to send message. Please try again later.");
     } finally {
@@ -146,6 +147,10 @@ export const Contact = () => {
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-green-900 mb-1">Email</label>
                 <Input id="email" type="email" placeholder="Your email" className="bg-white/50" value={form.email} onChange={handleChange} required />
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-green-900 mb-1">Phone Number (optional)</label>
+                <Input id="phone" type="tel" placeholder="Your phone number" className="bg-white/50" value={form.phone || ''} onChange={handleChange} />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-green-900 mb-1">Message</label>

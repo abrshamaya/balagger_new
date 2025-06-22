@@ -27,7 +27,7 @@ const events = [
 
 const Events = () => {
   const [open, setOpen] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", date: "" });
+  const [form, setForm] = useState({ name: "", email: "", date: "", phone: "" });
   const [loading, setLoading] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
 
@@ -46,12 +46,14 @@ const Events = () => {
         {
           name: form.name,
           email: form.email,
-          message: `<b>TABLE RESERVATION REQUEST</b><br>Name: ${form.name}<br>Email: ${form.email}<br>Date: ${form.date}`,
+          phone: form.phone,
+          message: `Reservation requested for: ${form.date}`,
+          request_type: "Table Reservation Request",
         },
         "cImHHNy21N6I0XM9V"
       );
       setFeedback("Reservation request sent successfully!");
-      setForm({ name: "", email: "", date: "" });
+      setForm({ name: "", email: "", date: "", phone: "" });
     } catch (error) {
       setFeedback("Failed to send reservation request. Please try again later.");
     } finally {
@@ -111,6 +113,10 @@ const Events = () => {
             <div>
               <label htmlFor="date" className="block text-sm font-medium text-pink-900 mb-1">Date</label>
               <Input id="date" type="date" className="bg-white/50" value={form.date} onChange={handleChange} required />
+            </div>
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium text-pink-900 mb-1">Phone Number (optional)</label>
+              <Input id="phone" type="tel" placeholder="Your phone number" className="bg-white/50" value={form.phone || ''} onChange={handleChange} />
             </div>
             <Button type="submit" className="w-full bg-pink-600 hover:bg-pink-700 text-white" disabled={loading}>
               {loading ? "Sending..." : "Send Reservation Request"}

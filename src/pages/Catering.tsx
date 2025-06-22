@@ -18,7 +18,7 @@ const cateringImages = [
 ];
 
 export const Catering = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", message: "", phone: "" });
   const [loading, setLoading] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
 
@@ -37,12 +37,14 @@ export const Catering = () => {
         {
           name: form.name,
           email: form.email,
-          message: `<b>CATERING REQUEST</b><br>${form.message}`,
+          phone: form.phone,
+          message: form.message,
+          request_type: "Catering Request",
         },
         "cImHHNy21N6I0XM9V"
       );
       setFeedback("Catering request sent successfully!");
-      setForm({ name: "", email: "", message: "" });
+      setForm({ name: "", email: "", message: "", phone: "" });
     } catch (error) {
       setFeedback("Failed to send catering request. Please try again later.");
     } finally {
@@ -84,6 +86,10 @@ export const Catering = () => {
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-green-900 mb-1">Email</label>
                 <Input id="email" type="email" placeholder="Your email" className="bg-white/50" value={form.email} onChange={handleChange} required />
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-green-900 mb-1">Phone Number (optional)</label>
+                <Input id="phone" type="tel" placeholder="Your phone number" className="bg-white/50" value={form.phone || ''} onChange={handleChange} />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-green-900 mb-1">Event Details</label>

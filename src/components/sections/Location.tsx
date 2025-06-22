@@ -20,4 +20,4 @@ export const Location = () => {
       </div>
     </section>
   );
-};
+}

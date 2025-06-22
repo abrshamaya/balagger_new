@@ -102,6 +102,53 @@ const Index = () => {
           </div>
         </Carousel>
       </section>
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-green-900 tracking-tight animate-fade-in">What Our Customers Say</h2>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {/* Review 1 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-start border-t-4 border-yellow-400 animate-fade-in">
+            <a href="https://maps.app.goo.gl/v22KrKEKKJhyaxc76" target="_blank" rel="noopener noreferrer" className="font-bold text-green-800 mb-2 hover:underline hover:no-underline">Amen Abebe</a>
+            <a href="https://maps.app.goo.gl/v22KrKEKKJhyaxc76" target="_blank" rel="noopener noreferrer" className="block text-green-700 mb-2 hover:underline hover:no-underline">
+              Truly very impressed with this restaurant. I've been here multiple times and each time I'm not disappointed. The service was excellent. Our server Rozina greeted us the minute we got there and continued to deliver excellent service. The food was of quality with great price. Overall very satisfied with their service. The owner/ manager was very humble and made sure we had a great experience. Thank you!
+            </a>
+          </div>
+          {/* Review 2 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-start border-t-4 border-yellow-400 animate-fade-in">
+            <a href="https://maps.app.goo.gl/nDqFm1iG28qVsayCA" target="_blank" rel="noopener noreferrer" className="font-bold text-green-800 mb-2 hover:underline hover:no-underline">Mo Lee</a>
+            <a href="https://maps.app.goo.gl/nDqFm1iG28qVsayCA" target="_blank" rel="noopener noreferrer" className="block text-green-700 mb-2 hover:underline hover:no-underline">
+              Vegetables combo with special gored gored and Yetashe Kift together for big meal, the seasoning of the food is great, variety veggie option with different seasoning and make sure try with original Ethiopia Enjer which little more sour and tangy flavor to accommodate food together well.
+            </a>
+          </div>
+          {/* Review 3 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-start border-t-4 border-yellow-400 animate-fade-in">
+            <a href="https://maps.app.goo.gl/uQUnqcHLHq8AnFbn9" target="_blank" rel="noopener noreferrer" className="font-bold text-green-800 mb-2 hover:underline hover:no-underline">Jessica S</a>
+            <a href="https://maps.app.goo.gl/uQUnqcHLHq8AnFbn9" target="_blank" rel="noopener noreferrer" className="block text-green-700 mb-2 hover:underline hover:no-underline">
+              Came here with a girlfriend for some late night eats. The food and service was amazing, I only have feedback on the music. It's just far too loud for the space size itself and it's coming at you from all angles which makes for a very uncomfortable dining experience. However the food was amazing and I'll be back maybe for takeout or before the band gets there. We had the awaze tibs and can't remember the other one but ask the bartender for the popular tibs dish and she'll tell you.
+            </a>
+          </div>
+          {/* Review 4 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-start border-t-4 border-yellow-400 animate-fade-in">
+            <a href="https://maps.app.goo.gl/5PWfwpXdGC4xqoZFA" target="_blank" rel="noopener noreferrer" className="font-bold text-green-800 mb-2 hover:underline hover:no-underline">Henok Garedw (Henny breezy)</a>
+            <a href="https://maps.app.goo.gl/5PWfwpXdGC4xqoZFA" target="_blank" rel="noopener noreferrer" className="block text-green-700 mb-2 hover:underline hover:no-underline">
+              It's a perfect place/ restaurant for authentic Ethiopian food especially for the Yetash-kitfo/ all in one kitfo. I usually ordered the kitfo and loved since. The food and service worth the price. The staff were friendly all the time I visited the restaurant.it's Perfect family kids friendly restaurant. If you into a quiet place to dine this is your best spot. I highly recommended it.
+            </a>
+          </div>
+          {/* Review 5 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-start border-t-4 border-yellow-400 animate-fade-in">
+            <a href="https://maps.app.goo.gl/EmkJXtss5jjAMk4f6" target="_blank" rel="noopener noreferrer" className="font-bold text-green-800 mb-2 hover:underline hover:no-underline">Kyla Jones</a>
+            <a href="https://maps.app.goo.gl/EmkJXtss5jjAMk4f6" target="_blank" rel="noopener noreferrer" className="block text-green-700 mb-2 hover:underline hover:no-underline">
+              Fantastic Ethiopian food at a great price. I got the house special which was all absolutely delicious, and the waitress is very sweet and provides excellent service. Wonderful meal!
+            </a>
+          </div>
+          {/* Review 6 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-start border-t-4 border-yellow-400 animate-fade-in">
+            <a href="https://maps.app.goo.gl/K2KzTv6vn2rSgTg39" target="_blank" rel="noopener noreferrer" className="font-bold text-green-800 mb-2 hover:underline hover:no-underline">Yohannes</a>
+            <a href="https://maps.app.goo.gl/K2KzTv6vn2rSgTg39" target="_blank" rel="noopener noreferrer" className="block text-green-700 mb-2 hover:underline hover:no-underline">
+              This restaurant truly stands out as a remarkable dining experience, with service that is nothing short of exceptional. I've had the pleasure of visiting several times, and each occasion has been consistently impressive. The owner takes a personal interest in ensuring that every table receives exactly what they ordered, often checking in to guarantee their expectations are not only met but exceeded. The food is absolutely delectable, bursting with flavor and crafted with care.
+            </a>
+          </div>
+        </div>
+      </section>
       <section className="max-w-6xl mx-auto px-4 pb-16">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-green-900 tracking-tight animate-fade-in">Find Us</h2>
         <div className="my-4 rounded-lg overflow-hidden shadow-lg relative">
