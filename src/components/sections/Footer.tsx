@@ -14,12 +14,16 @@ export const Footer = () => {
         <div className="flex justify-center mb-6">
           <img src="/lovable-uploads/7ac6a401-9189-4869-8885-7636e91a52c0.png" alt="Balagger Logo" className="h-12 w-12 rounded-full border-2 border-green-200 shadow-md" />
         </div>
-        <h2 className="text-2xl font-bold mb-2 tracking-widest">BALAGGER</h2>
+        <h2 className="text-2xl font-bold mb-2 tracking-widest" style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 900 }}>
+          <span style={{ color: '#FFB800', WebkitTextStroke: '2px #fff', textStroke: '2px #fff' }}>BALA</span>
+          <span style={{ color: '#137333', WebkitTextStroke: '2px #fff', textStroke: '2px #fff' }}>GG</span>
+          <span style={{ color: '#FFB800', WebkitTextStroke: '2px #fff', textStroke: '2px #fff' }}>ER</span>
+        </h2>
         <p className="mb-6 text-green-100 italic">Taste the Tradition. Experience the Culture.</p>
         <div className="flex flex-col md:flex-row md:justify-center md:items-center gap-6 mb-6 text-green-100 text-sm">
           <a href="tel:+17033797799" className="flex items-center gap-2 hover:text-green-300 transition-colors"><Phone className="w-4 h-4" /> (703) 379-7799</a>
           <a href="https://www.google.com/maps?q=38.841233,-77.118780&z=17&output=embed" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-green-300 transition-colors"><MapPin className="w-4 h-4" /> 3813 S George Mason Dr Suite - E & F, Falls Church, VA 22041</a>
-          <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> Mon-Sat: 11am-2pm, Sun: 12pm-2pm</span>
+          <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> Mon-Sun: 11am-2am</span>
         </div>
         <div className="flex justify-center space-x-6 mb-6">
           <a href="https://www.instagram.com/balaggerva/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors" aria-label="Instagram">

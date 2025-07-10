@@ -42,7 +42,7 @@ export const Hero = ({ onMenuClick }: HeroProps) => {
         </p>
 
         <a
-          href="#" // Replace with your online ordering link
+          href="https://www.clover.com/online-ordering/balagger-restaurant-falls-church"
           target="_blank"
           rel="noopener noreferrer"
           className="block mx-auto mt-4 w-max"

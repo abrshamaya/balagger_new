@@ -92,9 +92,7 @@ export const Contact = () => {
                 <div className="flex items-center space-x-3 text-green-700">
                   <Clock className="w-5 h-5" />
                   <div>
-                    <p>Mon - Thu: 11:00 AM - 2:00 PM</p>
-                    <p>Fri - Sat: 11:00 AM - 2:00 PM</p>
-                    <p>Sun: 12:00 PM - 2:00 PM</p>
+                    <p>Mon-Sun: 11:00 AM - 2:00 AM</p>
                   </div>
                 </div>
               </div>

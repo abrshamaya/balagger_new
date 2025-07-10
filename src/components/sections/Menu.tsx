@@ -76,7 +76,7 @@ export const Menu = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-center mb-6 md:mb-6">
           <a
-            href="#" // Replace with your online ordering link
+            href="https://www.clover.com/online-ordering/balagger-restaurant-falls-church"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full md:w-auto flex justify-center"

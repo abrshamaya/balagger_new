@@ -50,10 +50,16 @@ export const Navbar = () => {
                   <Icon className="w-5 h-5" />
                 </a>
               ))}
-              <Button className="bg-green-600 hover:bg-green-700 text-white">
-                <Phone className="w-4 h-4 mr-2" />
-                Order Now
-              </Button>
+              <a
+                href="https://www.clover.com/online-ordering/balagger-restaurant-falls-church"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-green-600 hover:bg-green-700 text-white">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Order Now
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -114,10 +120,17 @@ export const Navbar = () => {
                   </a>
                 ))}
               </div>
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
-                <Phone className="w-4 h-4 mr-2" />
-                Order Now
-              </Button>
+              <a
+                href="https://www.clover.com/online-ordering/balagger-restaurant-falls-church"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Order Now
+                </Button>
+              </a>
             </div>
           </div>
         )}
